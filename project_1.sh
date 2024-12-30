@@ -14,16 +14,15 @@ install_git_macOS(){
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
         # Install Git on macOS
         brew install git
-        fi
-        
-        # Check if the last command runned succesfully
-        if [[ $? -eq 0 ]]; then
-          echo " Git was installed successfully on macOS."
-        else
-           echo "Failed to install Git on macOS."
-        fi        
-}
+    fi
 
+    # Check if the last command runned succesfully
+    if [[ $? -eq 0 ]]; then
+        echo " Git was installed successfully on macOS."
+    else
+        echo "Failed to install Git on macOS."
+    fi        
+}
 # Function to install Git on Windows using WSL
 # Need to install WSL on Windows
 install_git_window() {
@@ -39,21 +38,20 @@ install_git_window() {
 
 # Function to install Git on Red Hat Enterprise Linux
 install_git_rhel(){
-     echo "Installing Git  on RHEL.."
-     sudo yum install -y git
+    echo "Installing Git  on RHEL.."
+    sudo yum install -y git
     if [[ $? -eq 0 ]]; then 
         echo "Git installed successfully on RHEL."
     else
         echo "Git was not installed  on RHEL."
     fi
 }
-
 # Menu to select the OS
 echo " Choose the Operation System to install."
 echo " 1 - macOS"
 echo " 2 - RHEL"
-echo "3 - Windows"
-read -p " Make your choice[1-3]: " choice
+echo " 3 - Windows"
+read -p " Make your choice [1-3]: " choice
 
 case $choice in 
 1)
