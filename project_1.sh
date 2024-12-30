@@ -2,9 +2,9 @@
 
 # Function to install Git on macOS
 install_git_macOS(){
-    # Display aa message
+    # Display a message
     echo "Installing Git om macOS...."   
-    # Check if brew (Homebrew package manager)is installed and redirects the standart output or error to /dev/null
+    # Check if brew (Homebrew package manager)is installed and redirects and discards the standard output and error
     if command -v brew > /dev/null 2>&1 ; then
          brew install git
     else
@@ -25,7 +25,6 @@ install_git_macOS(){
 
 # Function to install Git on Windows using WSL
 # Need to install WSL on Windows
-
 install_git_window() {
     echo "Installing Git through WSL on Windows.."
     sudo apt update
@@ -35,7 +34,6 @@ install_git_window() {
     else
         echo " Git was not installed in Windows."
     fi       
-
 }
 
 # Function to install Git on Red Hat Enterprise Linux
@@ -49,7 +47,6 @@ install_git_rhel(){
     fi
 }
 
-
 # Menu to select the OS
 echo " Choose the Operation System to install."
 echo " 1 - macOS"
@@ -59,11 +56,11 @@ read -p " Make your choice[1-3]: " choice
 
 case $choice in 
 1)
-install_git_macOS();;
+install_git_macOS;;
 2)
-install_git_rhel();;
+install_git_rhel;;
 3)
-install_git_window();;
+install_git_window;;
 *)
 echo "Invalid choice, please select [1-3]"
 esac
