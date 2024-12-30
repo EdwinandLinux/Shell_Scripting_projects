@@ -4,7 +4,7 @@
 install_git_macOS(){
     # Display aa message
     echo "Installing Git om macOS...."   
-    # Check if brew (Homebrew package manaer)is installed and redirects the standart output or error to /dev/null
+    # Check if brew (Homebrew package manager)is installed and redirects the standart output or error to /dev/null
     if command -v brew > /dev/null 2>&1 ; then
          brew install git
     else
