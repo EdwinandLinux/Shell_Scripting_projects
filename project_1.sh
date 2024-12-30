@@ -1,4 +1,4 @@
-##  Install Git on different Operating Systems
+# Install Git on different Operating Systems
 
 # Function to install Git on macOS
 install_git_macOS(){
@@ -15,6 +15,7 @@ install_git_macOS(){
         # Install Git on macOS
         brew install git
         fi
+        
         # Check if the last command runned succesfully
         if [[ $? -eq 0 ]]; then
           echo " Git was installed successfully on macOS."
