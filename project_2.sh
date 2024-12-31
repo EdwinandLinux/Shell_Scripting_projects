@@ -1,4 +1,4 @@
-# Check the Health of the web server (Apache) hosted on RHEL
+# Check Health of the web server (Apache) hosted on RHEL
 
 # Log file for monitoring
 LOG_FILE="/var/log/health.log"
