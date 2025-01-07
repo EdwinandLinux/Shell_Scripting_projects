@@ -5,13 +5,14 @@
 
 MYLOG=$1
 START_TIME=$(date +"%D %T")
+
 echo " Starting time: $START_TIME" >> /home/$USER/$MYLOG
 echo "Creating backup directory" >> /home/$USER/$MYLOG
 mkdir /home/$USER/work_backup1:
-
 echo "Copying Files" >>  /home/$USER/$MYLOG
 cp -r /home/$USER/work/* /home/$USER/work_backup/ >>  /home/$USER/$MYLOG
 
 ENDING_TIME=$(date +"%D %T")
+
 echo "Finished Copying Files" >>  /home/$USER/$MYLOG
 echo " after $ENDING_TIME" >>  /home/$USER/$MYLOG
