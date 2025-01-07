@@ -16,3 +16,7 @@ ENDING_TIME=$(date +"%D %T")
 
 echo "Finished Copying Files" >>  /home/$USER/$MYLOG
 echo " after $ENDING_TIME" >>  /home/$USER/$MYLOG
+
+# Run the script 
+# chmod +x ./project_3.sh
+# ./project_3.sh
