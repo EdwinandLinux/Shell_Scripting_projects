@@ -6,8 +6,6 @@ timestamp=$(date +"%Y-%m-%d_%H-%M-%S")
 echo "$timestamp"
 # Ask the user for the directory to back up
 read -p " Enter the directory you want to back up: " source_dir
-
-
 # Validate if the directory exists
 if [[ ! -d "$source_dir" ]] ; then
     echo " $source_dir does not exist."
