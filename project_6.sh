@@ -14,7 +14,7 @@ echo -e "Month\tDate\tSever Name\tService_ID\tMessage"
 echo -e "-------------------------------------------------------"
 
 # Parse the log file
-#grep CRON "$LOG_FILE" | while read -r log_line; do
+grep CRON "$LOG_FILE" | while read -r log_line; do
      # Extract the Month
      MONTH=$(echo "$log_file" | awk '{print $1}')
      # Extract the Date
