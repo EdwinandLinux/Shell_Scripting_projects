@@ -6,12 +6,10 @@
 #!/bin/bash
 
 LOG="/var/log/log_file.log"
-
 # Function for auditing
 log() {
     echo "$(date +"%Y-%m-%d %H:%M:%S") - $1 " | tee -a "$LOG"
 }
-
 # Function to add a user
 add_user() {
     local username=$1
@@ -28,7 +26,6 @@ add_user() {
         fi 
     fi
 }
-
 # Function to remove a user
 remove_user() {
     local username=$1
@@ -40,7 +37,6 @@ remove_user() {
         log "User: $username does not exists"
     fi
 }
-
 # Main function
 echo "##########################"
 echo -e "\tUser Management"
