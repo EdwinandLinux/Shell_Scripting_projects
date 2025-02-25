@@ -1,6 +1,7 @@
-# Create a Bash Script to add or remove Users.
+#  Create a Bash Script to:
+#  Add or Remove Users
 #  Add Users to a Secondary Group
-# Log all changes
+#  Log all changes
 
 #!/bin/bash
 
